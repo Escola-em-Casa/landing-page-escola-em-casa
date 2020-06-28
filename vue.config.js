@@ -4,6 +4,7 @@ module.exports = {
   ],
 
   pwa: {
-    name: 'Escola em Casa - DF'
+    name: 'Escola em Casa - DF',
+    themeColor: '#2092E5'
   }
 }
