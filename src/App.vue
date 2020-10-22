@@ -2,9 +2,8 @@
   <v-app id="app">
     <v-main>
       <Navbar />
-      <v-container>
-        <HomePage />
-      </v-container>
+      <HomePage />
+      <Footer />
     </v-main>
   </v-app>
 </template>
@@ -12,11 +11,13 @@
 <script>
 import HomePage from "./pages/HomePage/HomePage";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 export default {
   name: "App",
   components: {
     HomePage,
     Navbar,
+    Footer,
   },
 };
 </script>
