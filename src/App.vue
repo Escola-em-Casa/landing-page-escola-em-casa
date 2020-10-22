@@ -23,7 +23,7 @@ export default {
 
 <style>
 #app {
-  background: #2092e5;
+  background: #f7f7f7;
   margin: 0;
   text-align: center;
 }
