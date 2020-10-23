@@ -23,7 +23,7 @@
                 Secretaria de Estado de Educação do Distrito Federal, preparada
                 especialmente para você!
               </h4>
-              <div class="btn">Conheça mais</div>
+              <div class="btn" @click="goSobre">Conheça mais</div>
             </div>
             <img
               class="w-50"
@@ -46,6 +46,11 @@ export default {
   components: {
     Navbar,
     Footer,
+  },
+  methods: {
+    goSobre() {
+      this.$router.push("/about");
+    },
   },
 };
 </script>

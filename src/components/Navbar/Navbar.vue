@@ -1,6 +1,11 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light" id="Navbar">
-    <a class="navbar-brand text-white" href="#">Navbar</a>
+    <span class="navbar-brand text-white" @click="goHome">
+      <img
+        style="object-fit: contain; width: 3rem; cursor: pointer;"
+        src="@/assets/logo.png"
+      />
+    </span>
     <button
       class="navbar-toggler"
       type="button"
@@ -17,7 +22,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-white" @click="goSobre" href="#">Sobre</a>
+          <span class="nav-link text-white" @click="goSobre" href="#"
+            >Sobre</span
+          >
         </li>
       </ul>
     </div>
@@ -30,7 +37,9 @@ export default {
   methods: {
     goSobre() {
       this.$router.push("/about");
-      console.log("oi");
+    },
+    goHome() {
+      this.$router.go(-1);
     },
   },
 };
@@ -46,7 +55,8 @@ export default {
   box-shadow: 1px 3px 3px #35353590;
 }
 
-#Navbar li a {
+#Navbar li span {
   font-size: 1.3rem;
+  cursor: pointer;
 }
 </style>

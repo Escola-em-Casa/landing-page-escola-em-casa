@@ -2,7 +2,7 @@
   <div id="FAQPage">
     <Navbar />
     <div>
-      <p>oi </p>
+      <p>faq</p>
     </div>
     <Footer />
   </div>
