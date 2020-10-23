@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  landing-page-escola-em-casa:
+    container_name: landing-page-escola-em-casa
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '8080:8080'
